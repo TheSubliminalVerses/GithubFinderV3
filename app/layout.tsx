@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar"
 import { Metadata } from "next"
 import { Roboto } from "next/font/google"
-import "./globals.css"
+import "./global.css"
 
 const roboto = Roboto({
     weight: "400",
@@ -9,9 +9,9 @@ const roboto = Roboto({
     display: "swap"
 })
 
-const metadata: Metadata = {
+export const metadata: Metadata = {
     title: "Github Finder",
-    description: "App to find github users."
+    description: "Program to find github users."
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
